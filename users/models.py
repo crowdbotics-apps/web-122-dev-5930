@@ -10,3 +10,12 @@ class User(AbstractUser):
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
+
+
+class Ggjyu(models.Model):
+    "Generated Model"
+    sdgadfhs = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="ggjyu_sdgadfhs",
+    )
